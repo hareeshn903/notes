@@ -1,0 +1,15 @@
+Write a bash script to find the top 5 largest files in a directory and display their size?
+- What are variables and how to define them?
+- Difference between $var, ${var}, and "$var".
+- How to read user input in a script (read command).
+- How to use conditional statements (if, elif, else).
+- How do loops work (for, while, until)?
+- Explain $?, $#, $@, and $*.
+- How do you pass and use arguments in a script?
+- How do you check exit status of a command?
+- Write a script to monitor CPU or disk usage and send alerts.
+- How to extract specific columns from a file using awk.
+- How to replace text in a file using sed.
+- How to handle error logging and redirection (> , >>, 2>&1).
+- How to check if a file exists or not in a script.
+- How to use case statements.
