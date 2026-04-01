@@ -86,16 +86,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "imp/imp.md",
+                "file": "interview_questions/Untitled.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "imp"
+              "title": "Untitled"
+            }
+          },
+          {
+            "id": "9c493eed21a8d30c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -114,7 +128,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byModifiedTime",
+                "sortOrder": "alphabeticalReverse",
                 "autoReveal": true
               },
               "icon": "lucide-folder-closed",
@@ -258,10 +272,15 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "f7b5cec0ff2e9959",
+  "active": "9c493eed21a8d30c",
   "lastOpenFiles": [
-    "interview_questions/Ci_CD.md",
+    "interview_questions/Untitled.md",
+    "interview_questions/Untitled 2.md",
+    "interview_questions/Untitled 1.md",
+    "index.md",
+    "imp.md",
     "imp/imp.md",
+    "interview_questions/Ci_CD.md",
     "imp",
     "interview_questions/Untitled 3.md",
     "interview_questions/docker.md",
@@ -301,11 +320,6 @@
     "nginx/nginx-zero-to-hero-main/05-nginx-with-ssl-or-tls.md",
     "nginx/nginx-zero-to-hero-main/04-nginx-as-load-balancer.md",
     "nginx/nginx-zero-to-hero-main/03-nginx-as-reverse-proxy.md",
-    "nginx/05-nginx-with-ssl-or-tls.md",
-    "nginx/03-nginx-as-reverse-proxy.md",
-    "nginx/README.md",
-    "nginx/02-nginx-as-web-server.md",
-    "nginx/01-getting-started.md",
     "Untitled.canvas"
   ]
 }
