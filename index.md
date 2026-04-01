@@ -1,7 +1,0 @@
-[[interview_questions/Untitled]]
-
-[[interview_questions/Untitled 1]]
-
-[[interview_questions/Untitled 2]]
-
-[[imp/imp]]
