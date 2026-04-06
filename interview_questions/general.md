@@ -1,4 +1,4 @@
-- ow do you troubleshoot application anomalies and provide RCA?
+-How do you troubleshoot application anomalies and provide RCA?
 - Can you describe a real-time issue you have faced in a project and how you resolved it?
 2. What is the one thing your manager will miss most about you when you will leave the company?
 3. How does your day looks like? Sprints followed in your projects?
