@@ -13,7 +13,7 @@
     
 - 7. How do you manage permissions on EC2?
         
-- 23. IAM scenario: One user needs EKS-read, EBS-read, S3-write, CloudWatch-logs-read → how do you assign access?
+- IAM scenario: One user needs EKS-read, EBS-read, S3-write, CloudWatch-logs-read → how do you assign access?
         
 - 24. Why do we need 4 custom IAM roles?
         

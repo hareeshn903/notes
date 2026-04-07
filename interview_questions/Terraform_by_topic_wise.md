@@ -7,33 +7,21 @@
     
 3. What are data sources, and how do you use them in real-world scenarios?
     
-4. What is a Terraform backend? What is a Terraform remote backend, and why is it important?
+4. What is null_resource?
+
+5. What’s terraform init used for?
     
-5. What is the purpose of backend.tf?
+6. What does terraform validate do?
     
-6. What is null_resource?
+7. When do you use terraform fmt?
     
-7. What is a null_resource?
-8. What are Terraform workspaces and when do you use them?
-9. What’s terraform init used for?
+8. What does terraform refresh do internally?
     
-10. What does terraform validate do?
+9. What happens internally during terraform apply?
     
-11. Can it be run before or after terraform plan?
+10. What happens internally during terraform plan?
     
-12. When do you use terraform fmt?
-    
-13. What does terraform refresh do internally?
-    
-14. What is terraform import used for?
-    
-15. What happens internally during terraform apply?
-    
-16. What happens internally during terraform plan?
- 
-17. Explain terraform refresh vs terraform plan.
-    
-18. Explain the differences between terraform plan, terraform refresh, and terraform apply. When should each be used?
+11. Explain the differences between terraform plan, terraform refresh, and terraform apply. When should each be used?
 
 ---
 
@@ -56,7 +44,9 @@
 5. How do you store and manage sensitive values in Terraform?
     
 6. What are the problems with local state? What is remote backend in Terraform? 
-	1. Why do we store the Terraform state file in a remote backend?
+	1. What is the purpose of backend.tf?
+	2. What is a Terraform backend? What is a Terraform remote backend, and why is it important?
+	3. Why do we store the Terraform state file in a remote backend?
     
 7. Difference between local and remote state.
     
@@ -97,11 +87,11 @@
 
 1. How do you manage multiple environments (dev, staging, prod) in Terraform?
 2. How do you structure (organize) Terraform for multi-environment deployments (dev/stage/prod)?
-3. How do you handle environment-specific variables? How do you structure Terraform code for multiple environments? #env
+3. How do you handle environment-specific variables? How do you structure Terraform code for multiple environments? 
     
-4. What are Terraform workspaces? #env
+4.  What are Terraform workspaces and when do you use them?
     
-5. When should you avoid using workspaces? #env
+5. When should you avoid using workspaces? 
     
 6. When should we use Workspaces instead of separate repositories for environments?
     

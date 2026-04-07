@@ -54,4 +54,111 @@ For example, instead of hardcoding values like IDs, IPs, or names, you can dynam
 
 
 ---
+# What is null_resource?
+
+null_resource is used to execute custom actions in Terraform without managing any real infrastructure.
+it acts like a placeholder to run scripts or trigger actions inside the Terraform workflow.
+It’s mainly used for running shell commands, calling scripts, or triggering operations that are not directly supported by Terraform providers.
+it works with provisioners like local-exec or remote-exec. For example, we might use a null_resource to run a script after a VM is created or to perform some configuration step.
+It also supports something called triggers, which allow you to re-run the null_resource whenever specific values change.
+
+```
+resource "null_resource" "example" {
+  provisioner "local-exec" {
+    command = "echo Hello, Terraform!"
+  }
+}
+```
+
+```
+resource "null_resource" "example" {
+  triggers = {
+    always_run = timestamp()
+  }
+
+  provisioner "local-exec" {
+    command = "echo Running every time"
+  }
+}
+```
+
+---
+
+What’s terraform init used for?
+
+“terraform init initializes the working directory by downloading providers, setting up the backend, and preparing modules so Terraform can run the configuration.”
+
+terraform init is the first command you run when working with a Terraform project. It initializes the working directory and prepares it for use.
+When you run terraform init, Terraform downloads and installs the required providers, sets up the backend (like remote state storage if configured), and initializes any modules used in the configuration.
+It essentially sets up all the dependencies Terraform needs before you can run commands like plan or apply.
+So, without running terraform init, Terraform won’t be able to execute your configuration properly.
+
+>
+>```terraform init```
+>
+>Terraform performs a few key setup steps:
+>Downloads providers
+>>It fetches the required plugins (like AWS, Azure, GCP) defined in your configuration.
+>
+>Initializes backend
+>>Sets up where Terraform state will be stored (local file, S3, remote backend, etc.).
+>
+>Downloads modules
+>>If you’re using modules from external sources, it pulls them into your project.
+Creates .terraform/ directory
+This folder stores plugins, modules, and internal metadata.
+
+
+---
+### What does terraform validate do?
+
+terraform validate is used to check whether the Terraform configuration is syntactically correct and internally consistent—without actually applying anything.
+It verifies things like:
+- Syntax correctness → no typos or formatting issues
+- Valid arguments names → correct resource and provider configurations
+- Internal consistency → proper references between resources
+   
+It does not connect to any cloud provider or check whether the infrastructure actually exists. It’s purely a local validation step to catch errors early before running plan or apply.
+
+---
+### When do you use terraform fmt?
+
+“terraform fmt is used to automatically format Terraform configuration files according to standard style conventions. It improves readability and consistency across codebases but doesn’t change the logic or behavior of the configuration. It’s commonly used in development and CI/CD pipelines.”
+
+What it does `terraform fmt`
+Terraform will:
+  Fix indentation
+  Align arguments neatly
+  Standardize spacing
+  Make code follow Terraform style conventions
+
+---
+
+### What does terraform refresh do internally?
+
+**`terraform refresh`** is used to update Terraform’s state file to match the real-world infrastructure.
+It detects any changes made outside Terraform and updates the state accordingly.
+
+Internally, Terraform goes through each resource defined in the state file and makes API calls to the provider (like AWS, Azure, etc.) to fetch the current state of those resources. It then compares this real-time information with what’s stored in the state file and updates the state accordingly.
+
+This is useful when there are manual changes or drift in the infrastructure outside of Terraform. After refresh, Terraform has an accurate view of the current environment.
+
+terraform refresh does not modify infrastructure—it only updates the state file.
+
+### What it does
+
+When you run:
+
+```bash
+terraform refresh
+```
+
+Terraform will:
+
+* Query the provider (AWS, Azure, etc.)
+* Compare real infrastructure with the state file
+* Update the state file to reflect actual values
+
+
+---
 
