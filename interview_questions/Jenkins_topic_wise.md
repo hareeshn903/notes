@@ -7,8 +7,9 @@
 8. Explain Build vs Release
 9. Difference between Continuous Delivery vs Continuous Deployment
 10. What are environment variables in Jenkins and can you name some?
+    What are environment variables provided by Jenkins and how are they used?
 13. How many types of parameters are there in Jenkins
-14. What are environment variables provided by Jenkins and how are they used?
+
 
 ---
 
