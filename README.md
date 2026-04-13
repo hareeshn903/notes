@@ -4,5 +4,4 @@
 ### jenkins shared liberary
 ### terraform state management
 
-## Daily learning terraform status : 
-vpc in progress 
+## Daily learning terraform status : vpc in progress 
