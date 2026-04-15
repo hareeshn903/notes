@@ -49,7 +49,7 @@
 - Difference between Public EC2 and Private EC2
     
 - Public EC2 vs Private EC2
- 1️⃣ What are EC2, Lambda, and EKS?
+
     
 - Public EC2 vs Private EC2
     
@@ -365,7 +365,7 @@
 # 🟦 Compute / Containers / Serverless
 
 - Tell me about EKS?
-    
+     
 - Explain the difference between ECS, EKS, and Lambda — when would you choose each?
     
 - What is Elastic Beanstalk and AWS lambda
