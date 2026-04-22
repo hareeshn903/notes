@@ -35,7 +35,6 @@
     
 - **When do we choose MySQL (SQL) vs NoSQL databases?**
     
-- **10** How do you manage RDS backups and automated failover?
     
 
 ---
@@ -141,6 +140,7 @@
 - What is S3
     
 - --> Practical task: creating an S3 bucket and uploading an object
+- How to create S3 bucket
     
 - --> Problem statement: a website hosted on S3 that can be accessible only for 60 seconds and then becomes unavailable
     
@@ -163,8 +163,6 @@
 - 17. You accidentally deleted data from an S3 bucket — how do you recover it?
         
 - 9. S3 storage classes and lifecycle policies.
-        
-- 18. How to create S3 bucket
         
 - 19. What are methods/operations in S3
         

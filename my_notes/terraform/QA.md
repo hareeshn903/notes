@@ -1,3 +1,4 @@
+https://www.youtube.com/playlist?list=PL184oVW5ERMCirZu6wRL2NmUENHixB4mt
 
 ### What is Terraform?
 
@@ -162,3 +163,23 @@ Terraform will:
 
 ---
 
+What happens internally during terraform apply?
+
+“terraform apply is used to execute the changes defined in Terraform configuration. It provisions, updates, or deletes infrastructure based on the execution plan and then updates the state file. It’s the command that actually makes changes in the real environment.”
+
+**What it does**
+When you run:
+```terraform apply```
+Terraform will:
+  >Read your .tf configuration
+  Compare it with the current state
+  Generate an execution plan
+  Ask for approval (optional auto-approve)
+  Provision or modify resources (VMs, networks, databases, etc.)
+
+---
+> When you run terraform apply, Terraform executes the changes required to match your infrastructure with the desired configuration.
+Internally, it first refreshes the state to get the latest real-world infrastructure data. Then it compares your configuration with the current state and generates an execution plan (if not already provided).
+Next, Terraform builds a dependency graph of all resources to determine the correct order of operations. Based on this graph, it performs actions like create, update, or delete resources in parallel where possible.
+Terraform then makes API calls through the configured providers (like AWS or Azure) to apply those changes.
+As each resource is successfully created or modified, Terraform updates the state file to reflect the new infrastructure.
